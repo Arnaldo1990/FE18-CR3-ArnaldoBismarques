@@ -6,12 +6,15 @@
             <div class="card-body">
                 <h5 class="card-title">{{val.name}}</h5>
                 <p class="card-text">{{val.description}}</p>
-                <p class="card-text">{{val.price}}€</p>
-                <p *ngIf="val.availability">
+                <p class="card-text">{{val.price}} €</p>
+                <!-- <p *ngIf="val.availability">
                     Available: {{val.availability}}
-                </p>
-                <p class="btn btn-primary" routerLink="/menu/{{i}}">Details</p>
-                <p counterLink="#" class="btn btn-primary">Order</p>
+                </p> -->
+                <div *ngIf="val.availability; elseBlock">
+                    <p class="btn btn-outline-primary" routerLink="/menu/{{i}}">Details</p>
+                    <p class="btn btn-outline-success" (click)="addToCart">Order</p>
+                </div>
+                <ng-template #elseBlock>Sorry, this dish is not available at the moment!</ng-template>
             </div>
         </div>
     </div>

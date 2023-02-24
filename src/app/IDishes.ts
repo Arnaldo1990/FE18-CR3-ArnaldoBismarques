@@ -3,5 +3,5 @@ export interface IDishes{
     name: string; 
     price: number; 
     description: string;
-    availability?: string;
+    availability: Boolean;
     }

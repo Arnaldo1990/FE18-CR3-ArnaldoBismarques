@@ -8,7 +8,7 @@ price: 8.50,
 
 description: "with mozzarella, tomatoe sauce, spicy salami and mushrooms",
 
-availability: "Yes",
+availability: true,
 
 } ,{
 
@@ -20,7 +20,7 @@ availability: "Yes",
     
     description: "with mozzarrella, tomatoesauce and garlic",
 
-    availability: "Yes",
+    availability: false,
     
 }, {
     
@@ -32,7 +32,7 @@ price: 9.00,
 
 description: "with mozzarrella, tomatoesauce, black olives, tuna and onions",
 
-availability: "Yes",
+availability: true,
 
 },{
     pic: "https://cdn.pixabay.com/photo/2015/05/27/18/53/spaghetti-787048__340.jpg",
@@ -43,6 +43,8 @@ price: 7.00,
 
 description: "our housemade noodles, served with a tomatoe sauce and fresh meatballs",
 
+availability: false,
+
 },{
     pic: "https://cdn.pixabay.com/photo/2017/02/15/15/17/meal-2069021__340.jpg",
 
@@ -52,7 +54,7 @@ description: "our housemade noodles, served with a tomatoe sauce and fresh meatb
     
     description: "our housemade lasagne, served with meat (beef and pork), tomatoesauce, parmesano and carrots",
 
-    availability: "Yes",
+    availability: false,
 
 },{
     pic: "https://cdn.pixabay.com/photo/2018/02/12/07/54/calamari-3147644__340.jpg",
@@ -63,7 +65,8 @@ description: "our housemade noodles, served with a tomatoe sauce and fresh meatb
     
     description: "fried octopus served with potatoe fries and nana's homemade cocktail sauce",
 
-    availability: "Yes",
+    availability: false,
+
 
 },{
     pic: "https://cdn.pixabay.com/photo/2017/03/19/18/22/italian-food-2157246__340.jpg",
@@ -74,5 +77,7 @@ description: "our housemade noodles, served with a tomatoe sauce and fresh meatb
     
     description: "our sweet homemade dessert with local ingredients",
 
-}]
+    availability: true
+
+}];
 
