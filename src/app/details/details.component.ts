@@ -19,8 +19,8 @@ constructor (private route: ActivatedRoute) {
 ngOnInit(): void {
   
   this.route.params.subscribe((params: Params) => {
-
-    this.dishes = params['name'];
+    this.id = +params ["id"];
+    this.dishes = dishes[this.id];
   });
 
 }
