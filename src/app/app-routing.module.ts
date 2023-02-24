@@ -13,6 +13,8 @@ const routes: Routes = [{
   path: "cart", component: CartComponent
 },{
   path: "about", component: AboutComponent
+},{
+  path: "**", redirectTo: ""
 }];
 
 @NgModule({
