@@ -7,3 +7,22 @@
 #ristorante {
     text-align: center;
 }
+
+.heading1 {
+    font-family: 'Zeyada', cursive;
+    color: black;
+    background-color: yellow;
+}
+
+.heading4 {
+    font-family: 'Zeyada', cursive;
+    color: yellow;
+}
+
+.button {
+    text-align: center;
+    gap: 5px;
+    display: flex;
+    justify-content: center;
+    padding: 100px;
+}
