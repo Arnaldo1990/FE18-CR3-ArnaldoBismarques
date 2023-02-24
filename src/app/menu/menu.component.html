@@ -1,1 +1,17 @@
-<p>menu works!</p>
+<h1 class="text-center text-primary">Our specialties</h1>
+<div class="row row-cols-3">
+    <div *ngFor="let val of dishes; index as i">
+        <div class="card" style="width: 18rem;">
+            <img src="{{val.pic}}" class="card-img-top" alt="{{val.name}}">
+            <div class="card-body">
+                <h5 class="card-title">{{val.name}}</h5>
+                <p class="card-text">{{val.description}}</p>
+                <p class="card-text">{{val.price}}€</p>
+                <p *ngIf="val.availability">
+                    Available: {{val.availability}}
+                </p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+        </div>
+    </div>
+</div>
