@@ -14,7 +14,7 @@ dishes: Array<IDishes> = dishes;
 constructor(private cs: CartService) {
 
 }
-addToCart(dishes:IDishes){alert("Added to Cart")
+addToCart(dishes:IDishes){alert("Added to your cart")
 this.cs.addToCart(dishes);
 }
 }
