@@ -4,10 +4,6 @@
     /* color: white; */
 }
 
-#ristorante {
-    text-align: center;
-}
-
 .heading1 {
     font-family: 'Zeyada', cursive;
     color: black;
@@ -44,4 +40,13 @@
     background: none!important;
     height: 500px;
     width: 600px;
+}
+
+.choose {
+    background-color: rgb(17, 215, 237);
+}
+
+.container {
+    background-color: yellow;
+    padding: auto;
 }
