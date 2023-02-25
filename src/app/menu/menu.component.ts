@@ -11,10 +11,10 @@ import { IDishes } from '../IDishes';
 export class MenuComponent {
 dishes: Array<IDishes> = dishes;
 
-constructor(private CS: CartService) {
+constructor(private cs: CartService) {
 
 }
-addToCart(dishes:IDishes) {alert("Added to Cart")
-this.CS.addToCart(dishes);
+addToCart(dishes:IDishes){alert("Added to Cart")
+this.cs.addToCart(dishes);
 }
 }

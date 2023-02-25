@@ -7,12 +7,10 @@
                 <h5 class="card-title">{{val.name}}</h5>
                 <p class="card-text">{{val.description}}</p>
                 <p class="card-text">{{val.price}} €</p>
-                <!-- <p *ngIf="val.availability">
-                    Available: {{val.availability}}
-                </p> -->
-                <div *ngIf="val.availability; elseBlock">
-                    <p class="btn btn-outline-primary" routerLink="/menu/{{i}}">Details</p>
-                    <p class="btn btn-outline-success" (click)="addToCart">Order</p>
+
+                <div *ngIf="val.availability; else elseBlock">
+                    <a class="btn btn-outline-primary" routerLink="/menu/{{i}}">Details</a>
+                    <a class="btn btn-outline-success" (click)="addToCart(val)">Order</a>
                 </div>
                 <ng-template #elseBlock>Sorry, this dish is not available at the moment!</ng-template>
             </div>
