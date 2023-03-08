@@ -8,11 +8,9 @@
                 <p class="card-text">{{val.description}}</p>
                 <p class="card-text">{{val.price}} €</p>
 
-                <div *ngIf="val.availability; else elseBlock">
+                <div *ngIf="val.availability ">
                     <a class="btn btn-outline-primary" routerLink="/menu/{{i}}">Details</a>
-                    <a class="btn btn-outline-success" (click)="addToCart(val)">Order</a>
                 </div>
-                <ng-template #elseBlock>Sorry, this dish is not available at the moment!</ng-template>
             </div>
         </div>
     </div>

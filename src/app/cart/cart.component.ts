@@ -9,13 +9,14 @@ import { IDishes } from '../IDishes';
 })
 export class CartComponent implements OnInit {
   cart: Array<IDishes> = [];
+  price: number = 0;
   constructor (private CS:CartService) {
 
   }
 
 ngOnInit(): void {
-  
   this.cart = this.CS.getCart();
+  this.price = this.CS.getPrice();
 }
 
 }

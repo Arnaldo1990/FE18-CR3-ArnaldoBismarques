@@ -6,6 +6,7 @@ import { IDishes } from './IDishes';
 })
 export class CartService {
 cart : Array<IDishes> = [];
+price: number = 0;
 
   constructor() { }
 
@@ -22,5 +23,13 @@ cart : Array<IDishes> = [];
   clearCart() {
     this.cart = [];
     return this.cart;
+  }
+
+  getPrice() {
+    this.price = 0
+    for (let item of this.cart) {
+      this.price += item.price
+    }
+    return this.price
   }
 }
